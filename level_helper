@@ -1,0 +1,22 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+if ( ! function_exists('level'))
+{
+ function level($data) { 
+        
+        switch ($data) {
+        	case '1':
+        		  return "Super User";
+        		break;
+        	case '2':
+        		 return "Administrator";
+        		break;
+        	case '3':
+        		return "User";
+        		break;
+        	default:
+        		return "Not Set";
+        		break;
+        }
+	}
+}
